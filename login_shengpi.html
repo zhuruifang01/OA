@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>供应商报销-审批入口</title><meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <style type="text/css">
+        input{
+            font-family: "Microsoft Yahei";
+        }
+        .control-label{
+            color: #B2DFEE;
+            padding-left: 4px;
+        }
+        .ydlogo{
+             width:45px;
+             height:45px;
+             position:absolute;
+             left:50px;top:14px;
+        }
+        .ydlogo img{
+            width:100%;
+            height:100%;
+        }
+        body{
+            width:100%;height:100%;
+            background-image:url("img/bg.png");
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="loginbox" style="border-radius:10px;">
+        <div class="control-group normal_text">
+            <div class="ydlogo"><img src="img/logo.png" alt=""></div>
+            <h2 style="color:#000;font-size:28px;">供应商报销-审批入口</h2>
+        </div>
+        <!--登陆页面-->
+        <form id="loginform" class="form-vertical" style="background:#fff;">
+            <div class="control-group" style="margin-top:10px;">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_lg"><i class="icon-user" style="font-size:16px;color:cornflowerblue;"></i></span>
+                        <input type="text" placeholder="username" style="border:1px solid cornflowerblue;width:68%;"/>
+                    </div>
+                </div>
+            </div>
+            <div class="control-group2">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_ly"><i class="icon-lock" style="font-size:16px;color:cornflowerblue;"></i></span>
+                        <input type="password" placeholder="password" style="border:1px solid cornflowerblue;width:68%;"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <span class="pull-right" style="width:100%;height:33px;margin:0 auto;position:relative;">
+                       <button value="登陆" style="width:81%;height:100%;text-align:center;position:absolute;left:15px;right:0;margin:auto;background:cornflowerblue;color:#fff;border-radius:6px;border:0;">登陆</button>
+                </span>
+            </div>
+            <div class="control-group normal_text">
+                <div style="font-size:14px;color:gray;">
+                    上海音达科技实业有限公司版权所有 Copyright@ 2012-2017 All Rights Reserved
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+</body>
+
+</html>

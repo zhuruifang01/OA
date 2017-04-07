@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/form.js"></script>
+    <title>报销审批</title>
+</head>
+<body id="content">
+    <!--面包屑-->
+    <div class="breadcrumb">
+        <a href="form_shengpi.html" title="Go to Home"><i class="icon-home"></i> Home</a>
+        >
+        <a href="form_shengpi.html">供应商报销-审批</a>
+        >
+        <a href="form_sp_xianqing.html" style="color:cornflowerblue;">审批详情</a>
+    </div>
+    <!--表单-->
+    <!--报销人信息-->
+    <form action="" style="margin-top:80px;">
+        <ul>
+            <li class="title">
+                 <div class="icon-align-justify"></div>
+                 <div class="wenzi">报销人信息</div>
+            </li>
+            <li class="table">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr style="background:#f9f9f9">
+                                <th>姓名</th>
+                                <th>联系电话</th>
+                                <th>供应商</th>
+                                <th>合同编号</th>
+                                <th>部门</th>
+                                <th>项目</th>
+                                <th>订单</th>
+                                <th>发票类型</th>
+                                <th>申请时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </li>
+        </ul>
+    </form>
+    <!--冲借款信息-->
+    <form action="">
+        <ul>
+            <li class="title">
+                <div class="icon-align-justify"></div>
+                <div class="wenzi">冲借款信息</div>
+            </li>
+            <li class="table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr style="background:#f9f9f9">
+                        <th>未还金额</th>
+                        <th>冻结金额</th>
+                        <th>可冲款金额</th>
+                        <th>冲借款</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </form>
+    <!--费用明细-->
+    <form action="" id="feiyongmingxi">
+        <ul>
+            <li class="title">
+                <div class="icon-align-justify"></div>
+                <div class="wenzi">费用明细</div>
+            </li>
+            <li class="table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr style="background:#f9f9f9">
+                            <th>序号</th>
+                            <th>PO信息</th>
+                            <th>条件</th>
+                            <th>金额</th>
+                            <th>费用年月</th>
+                            <th>发票类型</th>
+                            <th>发票张数</th>
+                            <th>付款日期</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>合计</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="form_sp_lookfapiao.html" style="width:50px;padding:8px 10px;background:cornflowerblue;">查看发票</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </form>
+    <!--审批流-->
+    <form action="">
+        <ul>
+            <li class="title">
+                <div class="icon-align-justify"></div>
+                <div class="wenzi">审批流</div>
+            </li>
+            <li class="table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr style="background:#f9f9f9">
+                            <th>审批流</th>
+                            <th>项目经理</th>
+                            <th>部门经理</th>
+                            <th>财务</th>
+                            <th>总经理</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>姓名</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>审批状态</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>审批时间</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </form>
+    <!--提交-->
+    <ul class="tijiao">
+        <li class="tj">通过</li>
+        <a href="#"><li class="back">驳回</li></a>
+    </ul>
+</body>
+</html>

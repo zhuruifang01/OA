@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/form.js"></script>
+    <title>上传发票</title>
+</head>
+<body id="content">
+    <!--面包屑-->
+    <div class="breadcrumb">
+        <a href="form.html" title="Go to Home"><i class="icon-home"></i> Home</a>
+        >
+        <a href="form.html">供应商报销</a>
+        >
+        <a href="form_addbx.html">新增报销</a>
+        >
+        <a href="form_addfapiao.html" style="color:cornflowerblue;">上传发票</a>
+    </div>
+    <!--表单-->
+    <!--上传发票-->
+    <form action="" style="margin-top:80px;">
+        <ul>
+            <li class="title">
+                 <div class="icon-align-justify"></div>
+                 <div class="wenzi">上传发票</div>
+                 <div style="float:right;width:70px;margin-right:40px;background:cornflowerblue;text-align:center;" id="fpbutton_addfapiao">新增发票</div>
+            </li>
+            <li class="table">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr style="background:#f9f9f9">
+                            <th>序号</th>
+                            <th>发票代码</th>
+                            <th>发票日期</th>
+                            <th>收款方名称</th>
+                            <th>收款方税号</th>
+                            <th>金额</th>
+                            <th colspan="2">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="addfapiao" id="addfapiao_mingxi">
+                                <td class="table_select"> <input type="text" placeholder="请上传..."> </td>
+                                <td class="table_select"> <input type="text" placeholder="请上传..."> </td>
+                                <td class="table_select"> <input type="text" placeholder="请上传..."> </td>
+                                <td class="table_select"> <input type="text" placeholder="请上传..."> </td>
+                                <td class="table_select"> <input type="text" placeholder="请上传..."> </td>
+                                <td class="table_select"> <input type="text" placeholder="请上传..."> </td>
+                                <td><button style="width:50px;background:orangered;">删除</button></td>
+                                <!--图片预览-->
+                                <td>
+                                    <div class="weui_uploader_input_wrp">
+                                        <input type="file" id="image" accept="image/jpg,image/jpeg,image/png,image/gif" name="image" onchange="showInfo('image','picInfo');" value="">
+                                        <img src="" height="80" width="80" id="picInfo"/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </li>
+        </ul>
+    </form>
+    <!--提交-->
+    <ul class="tijiao">
+        <li class="tj">上传</li>
+        <a href="form_addbx.html"><li class="back">返回</li></a>
+    </ul>
+</body>
+<script>
+    //图片预览
+    function showInfo(fileid,target){
+        var preview = document.querySelector('#'+target);//获取img元素,显示图片位置，根据el表达式('#'+target)
+        var file = document.querySelector('#'+fileid).files[0];//根据id拿到文件选择框里面的文件，
+        var reader = new FileReader();//创建FileReader接口（把文件放到图片预览框里面）
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = "";
+        }
+    }
+</script>
+</html>

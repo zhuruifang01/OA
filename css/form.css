@@ -1,0 +1,224 @@
+html,body,ul,li{
+    width:100%;
+    margin:0;padding:0;
+    list-style:none;
+    text-decoration:none;
+    color:#666;
+    background:#e5e5e5;
+    overflow-x:hidden;
+}
+a{
+    text-decoration:none;
+    color:#494949;
+}
+/*面包屑*/
+.breadcrumb{
+    width:100%;
+    height:40px;
+    background:#fff;
+    line-height:40px;
+    padding-left:15px;
+    position:fixed;
+    top:0;
+    z-index:999;
+}
+.breadcrumb a{
+    text-decoration:none;
+    color:#666;
+}
+.breadcrumb a:hover{
+    color:cornflowerblue;
+    font-weight:bold;
+    text-decoration:none;
+}
+/*Main表单*/
+form ul{
+    width:98%;
+    height:auto;
+    margin:0 auto;
+    border-top:2px solid #f0f8ff;
+    border-left:2px solid #f0f8ff;
+    border-bottom:2px solid #c7c7c7;
+    border-right:2px solid #c7c7c7;
+    background:#f9f9f9;
+    margin-top:10px;
+}
+form ul li{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    background:#f9f9f9;
+    padding-left:10px;
+    padding-right:10px;
+    box-sizing:border-box;
+    border-bottom:2px solid #fff;
+    position:relative;
+}
+/*表单标题*/
+form ul .title{
+    width:100%;
+    height:35px;
+    line-height:35px;
+    color:#666;
+    background:#efefef;
+    font-size:16px;
+    border-bottom:2px solid #f0f8ff;
+}
+form ul .title i{
+    margin-left:5px;
+}
+form ul .title div{
+    float:left;
+    width:auto;
+    height:30px;
+    line-height:30px;
+}
+form ul .title .icon-align-justify{
+    padding-right:10px;
+    border-right:2px solid #f0f8ff;
+}
+form ul .title .wenzi{
+    margin-left:10px;
+}
+/*表单标签*/
+form ul li .cx_input{
+    width:270px;
+    height:100%;
+    color:#666;
+    float:left;
+}
+form ul li .cx_input span{
+    padding-right:10px;
+}
+form ul li .cx_input input{
+    width:170px;
+    height:28px;
+    margin-left:10px;
+    position:absolute;
+    top:0;bottom:0;
+    margin:auto;
+}
+form ul li .cx_input select{
+    height:34px;
+    position:absolute;
+    top:0;bottom:0;
+    margin:auto;
+    font-size:13px;
+    border:1px solid #ccc;
+}
+form ul li .button{
+    float:right;
+    width:100px;
+    height:34px;
+    background:cornflowerblue;
+    line-height:34px;
+    text-align:center;
+    margin-right:50px;
+    margin-top:6px;
+    border-radius:5px;
+}
+form ul li .button a{
+    color:#fff;
+}
+form ul .table{
+    height:auto;
+    margin-top:8px;
+    margin-bottom:3px;
+}
+.tabletitle{
+    background:#f9f9f9;
+}
+form ul .table tr th,form ul .table tr td{
+    height:25px;
+    text-align:center;
+    line-height:30px;
+    overflow:hidden;
+}
+form ul .table tr td button,form ul .table tr td a{
+    background:cornflowerblue;
+    border-radius:5px;
+    color:#fff;
+    padding:5px 10px;
+    border:0;
+}
+form ul .table tr td a{
+    padding:7px 10px;
+}
+/*新增报销*/
+form ul .table tr{
+    position:relative;
+}
+form ul .table tr .table_select{
+    width: auto;
+    height: 20px;
+    margin: 0;
+}
+form ul .table tr .table_select select,form ul .table tr .table_select input{
+    width: 100%;
+    height: 30px;
+    padding: 3px 5px;
+    margin: 0;
+    margin-top:4px;
+}
+form ul .table tr .table_select input{
+    width:90%;
+    padding:0;
+    margin:0;
+    padding-left:3px;
+}
+form ul li .add{
+    float:right;
+    margin-right:30px;
+    margin-top:1px;
+}
+form ul li .add button,form ul li .add div{
+    width:80px;
+    height:35px;
+    background:cornflowerblue;
+    border-radius:5px;
+    color:#fff;
+    text-align:center;
+    line-height:34px;
+    padding:0;
+    border:0;
+    margin-right:20px;
+    float:left;
+}
+.tijiao{
+    width:20%;
+    height:40px;
+    margin:0 auto;
+    margin-top:8px;
+}
+.tijiao li{
+    width:48%;
+    height:38px;
+    text-align:center;
+    border-radius:5px;
+    color:#fff;
+    line-height:40px;
+}
+.tijiao .tj{
+    float:left;
+    background:cornflowerblue;
+    border:1px solid cornflowerblue;
+}
+.tijiao .back{
+    float:right;
+    background:#fff;
+    border:1px solid #494949;
+    color:#494949;
+}
+.tijiao .back:hover{
+    background:#494949;
+    color:#fff;
+}
+/*发票上传*/
+
+#fpbutton_addfapiao{
+    border-radius:5px;
+    color:#fff;
+    font-size:13px;
+    padding:0px 2px;
+    margin-top:2px;
+}

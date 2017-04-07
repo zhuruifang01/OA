@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/form.js"></script>
+    <title>新增报销</title>
+</head>
+<body id="content">
+    <!--面包屑-->
+    <div class="breadcrumb">
+        <a href="form.html" title="Go to Home"><i class="icon-home"></i> Home</a>
+        >
+        <a href="form.html">供应商报销</a>
+        >
+        <a href="form_addbx.html" style="color:cornflowerblue;">新增报销</a>
+    </div>
+    <!--表单-->
+    <!--报销人信息-->
+    <form action="" style="margin-top:80px;">
+        <ul>
+            <li class="title">
+                 <div class="icon-align-justify"></div>
+                 <div class="wenzi">报销人信息</div>
+            </li>
+            <li class="table">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr style="background:#f9f9f9">
+                                <th>姓名</th>
+                                <th>联系电话</th>
+                                <th>供应商</th>
+                                <th>合同编号</th>
+                                <th>部门</th>
+                                <th>项目</th>
+                                <th>订单</th>
+                                <th>发票类型</th>
+                                <th>申请时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table_select">
+                                    <select>
+                                        <option>创新事业部</option>
+                                        <option>HR</option>
+                                        <option>财务部</option>
+                                    </select>
+                                </td>
+                                <td class="table_select">
+                                    <select>
+                                        <option>待审核</option>
+                                        <option>已审核</option>
+                                        <option>已打款</option>
+                                    </select>
+                                </td>
+                                <td class="table_select">
+                                    <select>
+                                        <option>待审核</option>
+                                        <option>已审核</option>
+                                        <option>已打款</option>
+                                    </select>
+                                </td>
+                                <td class="table_select">
+                                    <select>
+                                        <option>待审核</option>
+                                        <option>已审核</option>
+                                        <option>已打款</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </li>
+        </ul>
+    </form>
+    <!--冲借款信息-->
+    <form action="">
+        <ul>
+            <li class="title">
+                <div class="icon-align-justify"></div>
+                <div class="wenzi">冲借款信息</div>
+            </li>
+            <li class="table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr style="background:#f9f9f9">
+                        <th>未还金额</th>
+                        <th>冻结金额</th>
+                        <th>可冲款金额</th>
+                        <th>冲借款</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </form>
+    <!--费用明细-->
+    <form action="" id="feiyongmingxi">
+        <ul>
+            <li class="title">
+                <div class="icon-align-justify"></div>
+                <div class="wenzi">费用明细</div>
+            </li>
+            <li class="table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr style="background:#f9f9f9">
+                            <th>序号</th>
+                            <th>PO信息</th>
+                            <th>条件</th>
+                            <th>金额</th>
+                            <th>费用年月</th>
+                            <th>发票类型</th>
+                            <th>发票张数</th>
+                            <th>说明</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button style="width:50px;background:orangered;">删除</button></td>
+                        </tr>
+                        <tr id="addsum">
+                            <td>合计</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li style="overflow-y:hidden;">
+                <div class="add">
+                    <div id="addmingxi">添加明细</div>
+                    <a href="form_addfapiao.html"><div id="button_addfapiao">上传发票</div></a>
+                </div>
+            </li>
+        </ul>
+    </form>
+    <!--上传发票-->
+    <form action="" style="display:none;" id="form_addfapiao">
+        <ul>
+            <li class="title">
+                <div class="icon-align-justify"></div>
+                <div class="wenzi">上传发票</div>
+                <div class="add" style="float:right;">
+                    <div id="fpbutton_addfapiao" style="width:120px;height:32px;line-height:32px;">增加发票明细</div>
+                </div>
+            </li>
+            <li class="table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr style="background:#f9f9f9">
+                            <th>序号</th>
+                            <th>发票代码</th>
+                            <th>发票日期</th>
+                            <th>收款方名称</th>
+                            <th>收款方税号</th>
+                            <th>金额</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="addfapiao" id="addfapiao_mingxi">
+                             <td class="table_select"> <input type="text" placeholder="请添加..."> </td>
+                             <td class="table_select"> <input type="text" placeholder="请添加..."> </td>
+                             <td class="table_select"> <input type="text" placeholder="请添加..."> </td>
+                             <td class="table_select"> <input type="text" placeholder="请添加..."> </td>
+                             <td class="table_select"> <input type="text" placeholder="请添加..."> </td>
+                             <td class="table_select"> <input type="text" placeholder="请添加..."> </td>
+                             <td><button style="width:50px;background:cornflowerblue;">确定</button></td>
+                             <td><button style="width:50px;background:cornflowerblue;">删除</button></td>
+                             <td><button style="width:50px;background:cornflowerblue;">确定</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <!--图片上传-->
+            <li style="height:auto">
+                <div id="demo" class="demo"></div>
+            </li>
+        </ul>
+    </form>
+    <!--审批流-->
+    <form action="">
+        <ul>
+            <li class="title">
+                <div class="icon-align-justify"></div>
+                <div class="wenzi">审批流</div>
+            </li>
+            <li class="table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr style="background:#f9f9f9">
+                            <th>审批流</th>
+                            <th>项目经理</th>
+                            <th>部门经理</th>
+                            <th>财务</th>
+                            <th>总经理</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>姓名</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>审批状态</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>审批时间</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </form>
+    <!--提交-->
+    <ul class="tijiao">
+        <li class="tj">提交</li>
+        <a href="form.html"><li class="back">返回</li></a>
+    </ul>
+</body>
+</html>
